@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicLong
 
 @RestController
 class MathController {
-
+    
     val counter: AtomicLong = AtomicLong()
     private val math: SimpleMath = SimpleMath()
 
