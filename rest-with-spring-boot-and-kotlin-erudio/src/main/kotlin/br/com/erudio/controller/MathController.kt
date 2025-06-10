@@ -22,6 +22,7 @@ class MathController {
             throw UnsuportedMathOperationException("Please set a numeric value!")
         return math.soma(NumberConverter.convertToDouble(numberOne), NumberConverter.convertToDouble(numberTwo));
     }
+    
 
     @RequestMapping(value = ["/subtracao/{numberOne}/{numberTwo}"])
     fun subtracao(@PathVariable(value = "numberOne") numberOne: String?,
